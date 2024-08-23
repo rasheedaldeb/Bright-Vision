@@ -10,6 +10,13 @@ import slider8 from "../assets/slider8.jpg";
 import slider9 from "../assets/slider9.jpg";
 import home_bg from "../assets/home-hero-bg.jpg";
 
+//client image
+import Archirodon from "../assets/Archirodon.jpg";
+import Cepco from "../assets/Cepco.jpg";
+import El_Seif from "../assets/El-Seif.jpg";
+import Neom from "../assets/Neom.jpg";
+import The_red_sea from "../assets/slider9.jpg";
+
 export const sliderImgs = {
   home_bg,
   slider1,
@@ -21,4 +28,12 @@ export const sliderImgs = {
   slider7,
   slider8,
   slider9,
+};
+
+export const clientsImgs = {
+  Archirodon,
+  Cepco,
+  El_Seif,
+  Neom,
+  The_red_sea
 };
