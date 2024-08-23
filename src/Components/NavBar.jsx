@@ -7,7 +7,7 @@ const NavBar = ({ menu, btn }) => {
     <div className="relative">
       <nav
         className=" backdrop-brightness-150
-      h-[80px] flex items-center justify-between md:p-[5px_40px] p-[5px_20px]  fixed w-screen backdrop-blur z-20"
+      h-[80px] flex items-center justify-between md:p-[5px_40px] p-[5px_20px] w-screen backdrop-blur z-20"
       >
         <img
           src="/public/Images/logo-2-.png"

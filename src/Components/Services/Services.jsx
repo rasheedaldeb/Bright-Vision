@@ -17,20 +17,32 @@ import {
   
 const Services = () => {
   return (
-   <div className="services container ">
+   <div className="services container-section ">
             <h2 className="hero-title text-5xl text-primary font-bold">
                 Our <span className="text-secondaryDark">Services</span> 
             </h2>
-            <div className="container">
+            <div className="">
                 <Swiper
                     modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
-                    spaceBetween={2}
-                    slidesPerView={3}
                     loop={true}
                     autoplay={{
                         delay: 2500,
                         disabledInteraction: false,
                     }}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 10,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 10,
+                        },
+                        }}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log("slide change")}
                 >

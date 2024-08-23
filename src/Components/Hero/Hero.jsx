@@ -25,7 +25,7 @@ function Hero() {
         <h1 className="hero-title text-5xl text-primary font-bold">
           Bright Vision Group
         </h1>
-        <p className="text-xl text-secondary w-3/4">
+        <p className="hero-des text-xl text-secondary w-3/4">
           A company approved by security industry regulatory agency in the
           government of Dubai A company approved by security industry regulatory
           agency in the government of Dubai A company approved by security

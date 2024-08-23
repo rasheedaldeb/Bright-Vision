@@ -1,0 +1,49 @@
+.homeContact {
+    padding: 30px;
+}
+  
+.homeContact .content {
+  border-radius: 8px 8px 80px 8px;
+  text-align: center;
+  padding: 60px 0;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+.homeContact .content p {
+  font-size: 25px;
+  font-weight: 500;
+}
+.homeContact .content h1{
+  max-width: 550px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.homeContact .content a {
+  padding: 12px 40px;
+  border-radius: 38px;
+  border: none;
+  font-size: 20px;
+  height: 55px;
+}
+.homeContact .content a:hover {
+  font-size: 21px;
+  font-weight: 800;
+}  
+@media screen and (max-width: 768px){
+  .homeContact .content {
+    padding: 40px 5px;
+    gap: 15px;
+    width: 90%;
+  }
+  .homeContact .content p {
+    font-size: 20px;
+  }
+  .homeContact .content h1 {
+    font-size: 24px;
+  }
+  .homeContact .content a {
+    font-size: 18px;
+  }
+}

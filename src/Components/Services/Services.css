@@ -1,11 +1,12 @@
   .service-item{
-    width: 320px;
+    max-width: 300px;
     align-items: center;
     justify-content: center;
     text-align: center;
     gap: 10px;
     padding: 30px;
     border: 1px solid #ffa5001f;
+    margin: 50px auto;
   }
 .service-icon img {
   border-radius: 50%;

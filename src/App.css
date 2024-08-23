@@ -1,3 +1,8 @@
-.container{
-    padding: 80px 60px;
+.container-section{
+    padding: 80px 10px 80px 50px;
+}
+@media screen and (max-width: 992px){
+    .container-section{
+        padding: 80px 10px 80px 10px;
+    }
 }
