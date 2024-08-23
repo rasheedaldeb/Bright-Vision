@@ -1,6 +1,9 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Footer from "./Components/Footer/Footer";
 import NavBar from "./Components/NavBar";
-
+import Home from "./Pages/Home";
+import About from "./Pages/About";
 function App() {
   return (
     <>
@@ -25,6 +28,11 @@ function App() {
         ]}
         btn="Send Us A Message"
       />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Footer />
     </>
   );
 }

@@ -2,32 +2,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const NavBar = ({ menu, btn }) => {
-  const [scroll, setscroll] = useState(false);
   const [show, setshow] = useState(false);
-  //   const showMobilNav = ()=>{
-  //     if(show === false){
-  //         setshow(true)
-  //     }else{
-  //         setshow(false)
-  //     }
-  //   }
-  console.log(show);
-  const changeBG = () => {
-    if (window.scrollY >= 80) {
-      setscroll(true);
-    } else {
-      setscroll(false);
-    }
-  };
-  window.addEventListener("scroll", changeBG);
   return (
     <div className="relative">
       <nav
-        className={
-          scroll
-            ? "h-[80px] flex items-center justify-between md:p-[5px_40px] p-[5px_20px] border-b border-primary fixed w-screen "
-            : "h-[80px] flex items-center justify-between md:p-[5px_40px] p-[5px_20px] border-b border-primary fixed w-screen backdrop-blur"
-        }
+        className=" backdrop-brightness-150
+      h-[80px] flex items-center justify-between md:p-[5px_40px] p-[5px_20px]  fixed w-screen backdrop-blur z-20"
       >
         <img
           src="/public/Images/logo-2-.png"
@@ -42,7 +22,7 @@ const NavBar = ({ menu, btn }) => {
                 className="flex gap-2 items-center text-secondary cursor-pointer
                hover:text-primary transition-all"
               >
-                <Link to={item.path} className="font-bold text-xl ">
+                <Link to={item.path} className="font-bold text-2xl ">
                   {item.link}
                 </Link>
                 <i className={item.iconClass}></i>
@@ -52,7 +32,7 @@ const NavBar = ({ menu, btn }) => {
         </ul>
         <button
           className="md:w-[200px] h-[40px] w-[120px] text-[12px] md:text-[18px] bg-primary rounded text-secondary font-bold 
-      hover:bg-opacity-0 hover:border hover:border-secondary transition-all"
+      hover:bg-opacity-0 hover:border hover:border-secondary transition-all hidden lg:block"
         >
           {btn}
         </button>
@@ -60,8 +40,8 @@ const NavBar = ({ menu, btn }) => {
           <i
             className={
               show
-                ? "fa-regular fa-circle-xmark lg:hidden text-xl text-primary"
-                : "fa-solid fa-bars-staggered lg:hidden text-xl text-primary"
+                ? "fa-regular fa-circle-xmark lg:hidden text-2xl md:text-3xl text-primary"
+                : "fa-solid fa-bars-staggered lg:hidden text-2xl md:text-3xl text-primary"
             }
           ></i>
         </button>
@@ -69,8 +49,8 @@ const NavBar = ({ menu, btn }) => {
       <ul
         className={
           show
-            ? "mobile-nav absolute w-[40%] bg-[#fff] border-l border-primary top-[80px] right-0 h-screen flex flex-col items-center gap-10 py-[20px] scale-x-1 transition-all"
-            : "mobile-nav absolute w-[40%] bg-[#fff] border-l border-primary top-[80px] right-0 h-screen flex flex-col items-center gap-10 py-[20px] scale-x-0 transition-all"
+            ? "mobile-nav absolute w-[40%] bg-[#fff] border-l border-primary top-[80px] right-0 h-screen flex flex-col items-center gap-14 py-[20px] scale-x-1 transition-all z-20"
+            : "mobile-nav absolute w-[40%] bg-[#fff] border-l border-primary top-[80px] right-0 h-screen flex flex-col items-center gap-14 py-[20px] scale-x-0 transition-all z-20"
         }
       >
         {menu.map((item, i) => {
@@ -87,6 +67,12 @@ const NavBar = ({ menu, btn }) => {
             </li>
           );
         })}
+        <button
+          className="md:w-[200px] h-[40px] w-[120px] text-[12px] md:text-[18px] bg-primary rounded text-secondary font-bold 
+      hover:bg-opacity-0 hover:border hover:border-secondary transition-all"
+        >
+          {btn}
+        </button>
       </ul>
     </div>
   );

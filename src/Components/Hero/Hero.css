@@ -1,0 +1,64 @@
+.home-hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  align-items: center;
+  justify-content: space-around;
+}
+.hero-introduction {
+  padding: 30px;
+  gap: 50px;
+  width: 50%;
+}
+.hero-title {
+  text-shadow: #5c371b 10px 5px 10px;
+}
+.hero-slider,
+.swiper img {
+  height: 400px;
+  width: 400px;
+}
+.hero-introduction a {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 992px) {
+  .hero-title {
+    font-size: 36px;
+  }
+  .home-hero {
+    gap: 0;
+  }
+  .hero-introduction {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 687px) {
+  .home-hero {
+    height: 100vh;
+  }
+  .home-hero {
+    flex-direction: column;
+  }
+  .hero-introduction {
+    padding: 30px;
+    gap: 20px;
+  }
+  .hero-introduction {
+    padding: 10px;
+    width: 100%;
+  }
+  .swiper img {
+    height: 250px;
+    width: 380px;
+  }
+  .hero-slider {
+    height: 100%;
+    width: 100%;
+  }
+  .swiper img {
+    margin: 0 auto;
+  }
+}
