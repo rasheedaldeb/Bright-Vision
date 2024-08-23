@@ -1,0 +1,19 @@
+  .service-item{
+    width: 320px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    padding: 30px;
+    border: 1px solid #ffa5001f;
+  }
+.service-icon img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+.service-title{
+  height: 50px;
+}
+
+  

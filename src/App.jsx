@@ -16,11 +16,6 @@ function App() {
             iconClass: "fa-solid fa-address-card",
           },
           {
-            link: "our professional work",
-            path: "/work",
-            iconClass: "fa-solid fa-building",
-          },
-          {
             link: "contact us",
             path: "/contact",
             iconClass: "fa-solid fa-address-book",
