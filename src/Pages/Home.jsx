@@ -2,6 +2,7 @@ import Hero from "./../Components/Hero/Hero";
 import Services from "./../Components/Services/Services";
 import HomeContact from "./../Components/HomeContact/HomeContact";
 import Clients from "./../Components/Clients/Clients";
+import Works from "./../Components/Work/Work";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <Hero />
       <Services />
       <Clients />
+      <Works />
       <HomeContact />
     </>
   );

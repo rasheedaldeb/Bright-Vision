@@ -17,6 +17,20 @@ import El_Seif from "../assets/El-Seif.jpg";
 import Neom from "../assets/Neom.jpg";
 import The_red_sea from "../assets/slider9.jpg";
 
+//work image
+
+import work1 from "../assets/work1.jpg";
+import work2 from "../assets/work2.jpg";
+import work3 from "../assets/work3.jpg";
+import work4 from "../assets/work4.jpg";
+import work5 from "../assets/work5.jpg";
+import work6 from "../assets/work6.jpg";
+import work7 from "../assets/work7.jpg";
+import work8 from "../assets/work8.jpg";
+import work9 from "../assets/work9.jpg";
+import work10 from "../assets/work10.jpg";
+
+
 export const sliderImgs = {
   home_bg,
   slider1,
@@ -36,4 +50,17 @@ export const clientsImgs = {
   El_Seif,
   Neom,
   The_red_sea
+};
+
+export const worksImgs = {
+  work1,
+  work2,
+  work3,
+  work4,
+  work5,
+  work6,
+  work7,
+  work8,
+  work9,
+  work10,
 };

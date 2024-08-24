@@ -14,7 +14,7 @@
   text-shadow: #5c371b 10px 5px 10px;
 }
 .hero-slider,
-.swiper img {
+.hero-slider .swiper img {
   height: 400px;
   width: 400px;
 }
