@@ -14,3 +14,25 @@
     height: 120px;
     margin: 0 auto;
 }
+@media screen and (max-width:992px){
+    .clients-photo, .clients-description {
+        width: 50%;
+    }    
+}
+
+@media screen and (max-width:768px){
+    .clients-content{
+        flex-wrap: wrap;
+    }
+    .clients-photo, .clients-description {
+        width: 100%;
+    }
+    .clients-photo{
+        row-gap: 10px;
+    }
+    .clients-photo img{
+        width: 160px;
+        height: 100px;
+        margin: 0 auto;
+    }
+}

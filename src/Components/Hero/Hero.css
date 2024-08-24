@@ -25,10 +25,12 @@
   justify-content: center;
 }
 @media screen and (max-width: 992px) {
+  
   .hero-title {
     font-size: 30px !important;
   }
   .home-hero {
+    padding-top: 80px;
     gap: 0;
   }
   .hero-introduction {
@@ -42,7 +44,9 @@
 @media screen and (max-width: 687px) {
   .home-hero {
     flex-direction: column;
-      padding-top: 100px;
+    padding-top: 100px;
+    height: auto;
+      
   }
   .hero-introduction {
     padding: 30px;
@@ -52,7 +56,7 @@
     padding: 10px;
     width: 100%;
   }
-  .swiper img {
+  .hero-slider .swiper img  {
     height: 250px;
     width: 380px;
   }

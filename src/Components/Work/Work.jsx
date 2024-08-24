@@ -17,7 +17,7 @@ const Work = () => {
              <Swiper
                         modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
                         loop={true}
-                        navigation
+                        
                         autoplay={{
                             delay:2500,
                             disabledInteraction: false
